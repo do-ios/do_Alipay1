@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B1EDF321DB8C15C00AE289F /* AlipaySDK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3BD2CB951DB4B8DA004B6009 /* AlipaySDK.framework */; };
 		3BD2CB901DB4B82B004B6009 /* do_Alipay1_App.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD2CB8C1DB4B82B004B6009 /* do_Alipay1_App.m */; };
 		3BD2CB911DB4B82B004B6009 /* do_Alipay1_SM.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD2CB8F1DB4B82B004B6009 /* do_Alipay1_SM.m */; };
 		3BD2CB961DB4B8DA004B6009 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD2CB951DB4B8DA004B6009 /* AlipaySDK.framework */; };
@@ -60,6 +61,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				3B1EDF321DB8C15C00AE289F /* AlipaySDK.framework in CopyFiles */,
 				3BD2CBBE1DB4C79E004B6009 /* doAlipay.plist in CopyFiles */,
 				3BD2CBBB1DB4C786004B6009 /* AlipaySDK.bundle in CopyFiles */,
 				3BD2CBBC1DB4C786004B6009 /* do_Alipay1_App.h in CopyFiles */,

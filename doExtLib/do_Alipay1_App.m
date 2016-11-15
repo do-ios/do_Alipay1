@@ -8,6 +8,8 @@
 
 #import "do_Alipay1_App.h"
 #import <AlipaySDK/AlipaySDK.h>
+#import "doScriptEngineHelper.h"
+#import "do_Alipay1_SM.h"
 
 static do_Alipay1_App* instance;
 @implementation do_Alipay1_App
@@ -27,6 +29,8 @@ static do_Alipay1_App* instance;
     if ([url.host isEqualToString:@"safepay"]) {
         // 支付跳转支付宝钱包进行支付，处理支付结果
         [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+            do_Alipay1_SM *alipay = (do_Alipay1_SM*)[doScriptEngineHelper ParseSingletonModule:nil :@"do_Alipay1" ];
+            [alipay callback:resultDic];
         }];
         
         // 授权跳转支付宝钱包进行支付，处理支付结果

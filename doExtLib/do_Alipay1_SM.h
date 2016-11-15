@@ -10,5 +10,5 @@
 #import "doSingletonModule.h"
 
 @interface do_Alipay1_SM : doSingletonModule<do_Alipay1_ISM>
-
+-(void)callback:(NSDictionary *)dict;
 @end
